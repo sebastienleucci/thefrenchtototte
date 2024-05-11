@@ -15,7 +15,7 @@ export default function App() {
 	return (
 		<>
 			<Header />
-			<main className='relative w-[100dvw] overflow-hidden flex flex-col items-center'>
+			<main className='relative w-[100dvw] overflow-hidden flex flex-col items-center -mt-20'>
 				<VerticalLines />
 				<Hero />
 				<Cards />
