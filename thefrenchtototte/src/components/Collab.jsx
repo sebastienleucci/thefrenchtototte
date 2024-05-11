@@ -1,6 +1,6 @@
 export const Collab = () => {
 	return (
-		<section className='flex flex-col px-[60px] z-10 mb-44 mt-48'>
+		<section className='flex flex-col px-[60px] z-10 mt-48'>
 			<h1 className='mt-10 mb-3 text-center text-5xl leading-[2.7rem] text-brown-dark '>
 				ils ont suçoté, <br /> ils ont adoré
 			</h1>
