@@ -1,0 +1,108 @@
+{
+	"colors": [
+		{
+			"id": 0,
+			"finition": "Gold",
+			"ornament": [
+				{
+					"id": 0,
+					"name": "Blue",
+					"url": ["/img/colors/gb1.webp", "/img/colors/gb2.webp", "/img/colors/gb3.webp"]
+				},
+				{
+					"id": 1,
+					"name": "Green",
+					"url": ["/img/colors/gg1.webp", "/img/colors/gg2.webp", "/img/colors/gg3.webp"]
+				},
+				{
+					"id": 2,
+					"name": "Rose",
+					"url": ["/img/colors/gr1.webp", "/img/colors/gr2.webp", "/img/colors/gr3.webp"]
+				},
+				{
+					"id": 3,
+					"name": "Dark",
+					"url": ["/img/colors/gd1.webp", "/img/colors/gd2.webp", "/img/colors/gd3.webp"]
+				}
+			]
+		},
+		{
+			"id": 1,
+			"finition": "Silver",
+			"ornament": [
+				{
+					"id": 0,
+					"name": "Blue",
+					"url": ["/img/colors/sb1.webp", "/img/colors/sb2.webp", "/img/colors/sb3.webp"]
+				},
+				{
+					"id": 1,
+					"name": "Green",
+					"url": ["/img/colors/sg1.webp", "/img/colors/sg2.webp", "/img/colors/sg3.webp"]
+				},
+				{
+					"id": 2,
+					"name": "Rose",
+					"url": ["/img/colors/sr1.webp", "/img/colors/sr2.webp", "/img/colors/sr3.webp"]
+				},
+				{
+					"id": 3,
+					"name": "Dark",
+					"url": ["/img/colors/sd1.webp", "/img/colors/sd2.webp", "/img/colors/sd3.webp"]
+				}
+			]
+		},
+		{
+			"id": 2,
+			"finition": "White",
+			"ornament": [
+				{
+					"id": 0,
+					"name": "Blue",
+					"url": ["/img/colors/wb1.webp", "/img/colors/wb2.webp", "/img/colors/wb3.webp"]
+				},
+				{
+					"id": 1,
+					"name": "Green",
+					"url": ["/img/colors/wg1.webp", "/img/colors/wg2.webp", "/img/colors/wg3.webp"]
+				},
+				{
+					"id": 2,
+					"name": "Rose",
+					"url": ["/img/colors/wr1.webp", "/img/colors/wr2.webp", "/img/colors/wr3.webp"]
+				},
+				{
+					"id": 3,
+					"name": "Dark",
+					"url": ["/img/colors/wd1.webp", "/img/colors/wd2.webp", "/img/colors/wd3.webp"]
+				}
+			]
+		},
+		{
+			"id": 3,
+			"finition": "Black",
+			"ornament": [
+				{
+					"id": 0,
+					"name": "Blue",
+					"url": ["/img/colors/bb1.webp", "/img/colors/bb2.webp", "/img/colors/bb3.webp"]
+				},
+				{
+					"id": 1,
+					"name": "Green",
+					"url": ["/img/colors/bg1.webp", "/img/colors/bg2.webp", "/img/colors/bg3.webp"]
+				},
+				{
+					"id": 2,
+					"name": "Rose",
+					"url": ["/img/colors/br1.webp", "/img/colors/br2.webp", "/img/colors/br3.webp"]
+				},
+				{
+					"id": 3,
+					"name": "Dark",
+					"url": ["/img/colors/bd1.webp", "/img/colors/bd2.webp", "/img/colors/bd3.webp"]
+				}
+			]
+		}
+	]
+}

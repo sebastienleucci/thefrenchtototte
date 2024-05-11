@@ -17,7 +17,7 @@ export const Collab = () => {
 					text={
 						<>
 							J’ai arrêté de vape depuis que j’ai découvert
-							<b className='font-tartuffo text-brown-dark'>the french tototte®</b>
+							<b className='font-tartuffo text-brown-dark'> the french tototte®</b>
 						</>
 					}
 				/>
@@ -29,7 +29,7 @@ export const Collab = () => {
 					text={
 						<>
 							J’ai commandé un pack pour toute la famille et même mon fils Légolas Son Goku adore sa
-							<b className='font-tartuffo text-brown-dark'>the french tototte®</b>
+							<b className='font-tartuffo text-brown-dark'> the french tototte®</b>
 						</>
 					}
 				/>

@@ -1,7 +1,8 @@
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import Slider from "react-slick"
+import { colors } from "../assets/colors.json"
 
 export const BuyTototte = () => {
 	const [activeFinition, setActiveFinition] = useState(0)
@@ -9,8 +10,8 @@ export const BuyTototte = () => {
 
 	return (
 		<>
-			<section className='flex flex-col z-10 mt-52 max-w-full'>
-				<h1 className='px-[60px] mt-10 text-5xl leading-[2.7rem] text-brown-dark '>
+			<section className='flex flex-col z-20 pt-52 max-w-full bg-beige-light'>
+				<h1 className='relative z-10 px-[60px] mt-10 text-5xl leading-[2.7rem] text-brown-dark '>
 					personnalisez votre tototte
 				</h1>
 				<p className='px-[60px] mt-5 mb-10 leading-7'>
@@ -18,13 +19,9 @@ export const BuyTototte = () => {
 				</p>
 			</section>
 			<div className='w-[100dvw] z-20 overflow-hidden sticky top-0'>
-				<SimpleSlider>
-					<img src={"/img/colors/gr1.png"} loading='lazy' fetchpriority='low' />
-					<img src={"/img/colors/gr2.png"} loading='lazy' fetchpriority='low' />
-					<img src={"/img/colors/gr3.png"} loading='lazy' fetchpriority='low' />
-				</SimpleSlider>
+				<SimpleSlider {...{ colors, activeFinition, activeOrnament }}></SimpleSlider>
 			</div>
-			<section className='relative flex flex-col z-10 max-w-full'>
+			<section className='relative flex flex-col z-10 max-w-full bg-beige-light pb-32'>
 				<div className='flex flex-col justify-start px-10 mt-14'>
 					<h3 className='text-3xl text-brown-dark'>finition</h3>
 					<p className='text-sm mb-5'>Choisissez votre favorite</p>
@@ -64,7 +61,9 @@ function ButtonColors({ activeIndex, setActiveIndex, colors }) {
 	return (
 		<div className='flex gap-4'>
 			<button
-				className={`size-10 aspect-square rounded-full p-[3px] border border-${isActive(0) ? "brown-dark" : "transparent"} `}
+				className={`size-10 aspect-square rounded-full p-[3px] border ${
+					isActive(0) ? "border-brown-dark" : "border-transparent"
+				} `}
 				onClick={() => handleClick(0)}
 			>
 				<div
@@ -76,7 +75,9 @@ function ButtonColors({ activeIndex, setActiveIndex, colors }) {
 				/>
 			</button>
 			<button
-				className={`size-10 aspect-square rounded-full p-[3px] border border-${isActive(1) ? "brown-dark" : "transparent"} `}
+				className={`size-10 aspect-square rounded-full p-[3px] border ${
+					isActive(1) ? "border-brown-dark" : "border-transparent"
+				} `}
 				onClick={() => handleClick(1)}
 			>
 				<div
@@ -88,7 +89,9 @@ function ButtonColors({ activeIndex, setActiveIndex, colors }) {
 				/>
 			</button>
 			<button
-				className={`size-10 aspect-square rounded-full p-[3px] border border-${isActive(2) ? "brown-dark" : "transparent"} `}
+				className={`size-10 aspect-square rounded-full p-[3px] border ${
+					isActive(2) ? "border-brown-dark" : "border-transparent"
+				} `}
 				onClick={() => handleClick(2)}
 			>
 				<div
@@ -100,7 +103,9 @@ function ButtonColors({ activeIndex, setActiveIndex, colors }) {
 				/>
 			</button>
 			<button
-				className={`size-10 aspect-square rounded-full p-[3px] border border-${isActive(3) ? "brown-dark" : "transparent"} `}
+				className={`size-10 aspect-square rounded-full p-[3px] border ${
+					isActive(3) ? "border-brown-dark" : "border-transparent"
+				} `}
 				onClick={() => handleClick(3)}
 			>
 				<div
@@ -131,7 +136,7 @@ function ButtonsPack() {
 			<button
 				className={`flex justify-between items-center border ${
 					isActive(0) ? "border-brown-dark" : "border-brown-light/50"
-				} p-4 hover:bg-white/50`}
+				} p-4 hover:bg-white/50 bg-beige-light`}
 				onClick={() => handleClick(0)}
 			>
 				<div className='flex flex-col text-left'>
@@ -143,7 +148,7 @@ function ButtonsPack() {
 			<button
 				className={`flex justify-between items-center border ${
 					isActive(1) ? "border-brown-dark" : "border-brown-light/50"
-				} p-4 hover:bg-white/50`}
+				} p-4 hover:bg-white/50 bg-beige-light`}
 				onClick={() => handleClick(1)}
 			>
 				<div className='flex flex-col text-left'>
@@ -155,7 +160,7 @@ function ButtonsPack() {
 			<button
 				className={`flex justify-between items-center border ${
 					isActive(2) ? "border-brown-dark" : "border-brown-light/50"
-				} p-4 hover:bg-white/50`}
+				} p-4 hover:bg-white/50 bg-beige-light`}
 				onClick={() => handleClick(2)}
 			>
 				<div className='flex flex-col text-left'>
@@ -171,7 +176,7 @@ function ButtonsPack() {
 	)
 }
 
-function SimpleSlider({ children }) {
+function SimpleSlider({ colors, activeFinition, activeOrnament }) {
 	const settings = {
 		dots: true,
 		infinite: true,
@@ -186,5 +191,18 @@ function SimpleSlider({ children }) {
 			</div>
 		),
 	}
-	return <Slider {...settings}>{children}</Slider>
+
+	const [urlObject, setUrlObject] = useState(["/img/colors/gb1.png", "/img/colors/gb2.png", "/img/colors/gb3.png"])
+
+	useEffect(() => {
+		setUrlObject(colors[activeFinition].ornament[activeOrnament].url)
+	}, [activeFinition, activeOrnament])
+
+	return (
+		<Slider {...settings}>
+			{urlObject.map((url, index) => (
+				<img key={index} src={url} loading='lazy' fetchpriority='low' />
+			))}
+		</Slider>
+	)
 }

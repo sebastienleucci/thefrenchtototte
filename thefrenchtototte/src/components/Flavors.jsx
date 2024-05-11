@@ -1,71 +1,84 @@
 export const Flavors = () => {
 	return (
-		<section className='z-10 flex flex-col mt-44 mb-64 w-full mx-auto px-5'>
-			<ul className='flex'>
-				<OneSaveur
-					saveur='s1'
-					side='left'
-					title='Fraise'
-					text='Une fraise française cueillie dans nos chères régions'
-				/>
-				<OneSaveur saveur='s2' side='left' title='Menthe' text='Pour une haleine fraiche avant vos reunions' />
-				<OneSaveur saveur='s3' side='right' title='Bubble Gum' text='Un gout sucré pour retourner en enfance' />
-				<OneSaveur
-					saveur='s4'
-					side='right'
-					title='Spicy'
-					text='Pour ceux qui aiment vivre de nouvelles choses tous les jours'
-				/>
-			</ul>
-			<div className='-mt-4 h-24 flex items-end overflow-hidden'>
-				<img src='/img/bg-gradient-d.svg' className='object-cover w-[120%]' />
+		<section className='relative z-10 flex flex-col justify-center mt-44 mb-64 w-full mx-auto px-5'>
+			<div className='lg:flex w-full max-w-[720px] mx-auto'>
+				<ul className='flex flex-1'>
+					<OneSaveur
+						saveur='s1'
+						side='left'
+						title='Fraise'
+						text='Une fraise française cueillie dans nos chères régions'
+					/>
+					<OneSaveur
+						saveur='s2'
+						side='left'
+						title='Menthe'
+						text='Pour une haleine fraiche avant vos reunions'
+					/>
+					<OneSaveur
+						saveur='s3'
+						side='right'
+						title='Bubble Gum'
+						text='Un gout sucré pour retourner en enfance'
+					/>
+					<OneSaveur
+						saveur='s4'
+						side='right'
+						title='Spicy'
+						text='Pour ceux qui aiment vivre de nouvelles choses tous les jours'
+					/>
+				</ul>
+				<div className='lg:hidden -mt-4 h-24 flex items-end overflow-hidden'>
+					<img src='/img/bg-gradient-d.svg' className='object-cover w-[120%]' />
+				</div>
+				<ul className='flex flex-1'>
+					<OneSaveur
+						saveur='s5'
+						side='left'
+						title='Bacon fumé'
+						text='Un goût de porc pour honorer nos hélevages made in France'
+					/>
+					<OneSaveur
+						saveur='s6'
+						side='left'
+						title='France'
+						text='Suçotez la république avec cet étendard bleu blanc rouge'
+					/>
+					<OneSaveur
+						saveur='s7'
+						side='right'
+						title='Jus de Mynthos'
+						text='Profitez du goût concentré de la première traîte du matin'
+					/>
+					<OneSaveur
+						saveur='s8'
+						side='right'
+						title='Montazac et Torez'
+						text="Pour retrouver le goût d'un vin unique"
+					/>
+				</ul>
+				<div className='lg:hidden -mt-4 h-24 flex items-end overflow-hidden'>
+					<img src='/img/bg-gradient-d.svg' className='object-cover w-full' />
+				</div>
+				<div className='absolute hidden lg:block left-0 mt-[9rem] w-full h-32 bg-gradient-to-b from-beige to-transparent ' />
 			</div>
-			<ul className='flex'>
-				<OneSaveur
-					saveur='s5'
-					side='left'
-					title='Bacon fumé'
-					text='Un goût de porc pour honorer nos hélevages made in France'
-				/>
-				<OneSaveur
-					saveur='s6'
-					side='left'
-					title='France'
-					text='Suçotez la république avec cet étendard bleu blanc rouge'
-				/>
-				<OneSaveur
-					saveur='s7'
-					side='right'
-					title='Jus de Mynthos'
-					text='Profitez du goût concentré de la première traîte du matin'
-				/>
-				<OneSaveur
-					saveur='s8'
-					side='right'
-					title='Montazac et Torez'
-					text="Pour retrouver le goût d'un vin unique"
-				/>
-			</ul>
-			<div className='-mt-4 h-24 flex items-end overflow-hidden'>
-				<img src='/img/bg-gradient-d.svg' className='object-cover w-full' />
-			</div>
-			<div className='mt-7 px-5 flex flex-wrap max-w-96 mx-auto'>
+			<div className='mt-7 lg:mt-20 px-5 flex flex-wrap lg:flex-nowrap max-w-96 lg:max-w-[720px] mx-auto'>
 				<div className='flex justify-between w-full'>
 					<div className='flex-1'>
 						<h4 className='font-gustavo font-bold text-brown-dark text-[4rem]'>30</h4>
-						<p className="text-sm">
+						<p className='text-sm'>
 							Saveurs <br /> disponibles
 						</p>
 					</div>
 					<div className='flex-1 pl-12'>
 						<h4 className='font-gustavo font-bold text-brown-dark text-[4rem]'>11</h4>
-						<p className="text-sm">
+						<p className='text-sm'>
 							Vertus
 							<br /> medicinales
 						</p>
 					</div>
 				</div>
-				<p className=' mt-10 leading-7'>
+				<p className='lg:ml-20 mt-10 leading-7'>
 					Laissez-vous tenter par les saveurs des différents plugs et
 					<b className='text-brown-dark'> decouvrez un monde de delices</b> pour chaque envie.
 				</p>
@@ -87,7 +100,9 @@ const OneSaveur = ({ saveur, side, title, text }) => {
 			/>
 			<div
 				className={`absolute min-h-32 z-20 bg-beige-light -top-40 w-[240px] p-5 border-brown-dark border duration-500 hidden group-hover:block ${
-					side === "left" ? "left-10" : "right-10"
+					side === "left"
+						? "left-10 sm:left-20 md:left-28 lg:left-10"
+						: "right-10 sm:right-20 md:right-28 lg:right-10"
 				}`}
 			>
 				<h3>{title}</h3>
