@@ -48,6 +48,10 @@
 	src: url("./assets/fonts/Tartuffo_trial/Tartuffo_Trial-Thin.otf") format("opentype");
 }
 
+:root {
+	background-color: #faf6f3;
+}
+
 * {
 	font-family: "Gustavo";
 	font-weight: 400;

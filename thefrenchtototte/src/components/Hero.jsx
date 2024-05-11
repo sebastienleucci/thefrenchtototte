@@ -10,7 +10,7 @@ export const Hero = () => {
 					type='video/mp4'
 					src='/video/herovideo.mp4'
 					className='min-w-[1080px] w-full max-w-[2140px]'
-					// autoPlay
+					autoPlay
 					loop
 					muted
 				/>

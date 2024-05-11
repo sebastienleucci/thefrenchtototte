@@ -1,6 +1,6 @@
 export const Cards = () => {
 	return (
-		<section className='z-10 flex flex-wrap justify-center gap-5 mx-auto px-5 pt-[28rem]'>
+		<section className='z-20 flex flex-wrap justify-center gap-5 mx-auto px-5 pt-[40rem] md:pt-[24rem]'>
 			<div className='min-w-72 max-w-96 flex-1 rounded-xl overflow-hidden bg-gradient-to-t from-blue to-white'>
 				<div className='aspect-[5/4] w-full'>
 					<img src='/img/tot-big.png' className='object-cover -translate-x-24 translate-y-16 scale-110' />

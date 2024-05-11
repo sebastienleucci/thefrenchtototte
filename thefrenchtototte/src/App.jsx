@@ -9,15 +9,16 @@ import { Collab } from "./components/Collab.jsx"
 import { BuyTototte } from "./components/BuyTototte.jsx"
 import { Header } from "./components/Header.jsx"
 import { Footer } from "./components/Footer.jsx"
+import { VerticalLines } from "./components/VerticalLines.jsx"
 
 export default function App() {
 	return (
 		<>
 			<Header />
-			<main className='relative w-[100dvw] overflow-hidden flex flex-col items-center bg-beige-light'>
+			<main className='relative w-[100dvw] overflow-hidden flex flex-col items-center'>
 				<VerticalLines />
-				{/* <Hero /> */}
-				{/* <Cards /> */}
+				<Hero />
+				<Cards />
 				<TechPlug />
 				<Flavors />
 				<NoTroubles />
@@ -31,14 +32,4 @@ export default function App() {
 	)
 }
 
-const VerticalLines = () => {
-	return (
-		<>
-			<div className='fixed left-1/2 -translate-x-1/2 w-[2px] h-full mx-auto bg-beige/30' />
-			<div className='fixed left-6 lg:left-52 translate-x-1/2 w-[2px] h-full mx-auto bg-beige/30' />
-			<div className='fixed right-6 lg:right-52 -translate-x-1/2 w-[2px] h-full mx-auto bg-beige/30' />
-			<div className='hidden 2xl:block fixed left-[30%] translate-x-1/2 w-[2px] h-full mx-auto bg-beige/30' />
-			<div className='hidden 2xl:block fixed right-[30%] -translate-x-1/2 w-[2px] h-full mx-auto bg-beige/30' />
-		</>
-	)
-}
+
