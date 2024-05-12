@@ -38,14 +38,14 @@ export default function App() {
 		<>
 			<Header />
 			<div
-				className={`sticky flex items-start justify-center top-0 w-full z-40 pb-5 pointer-events-none duration-500 bg-gradient-to-b from-beige to-transparent ${
+				className={`hidden sticky md:flex items-start justify-center top-0 w-full z-40 pb-5 pointer-events-none duration-500 bg-gradient-to-b from-beige to-transparent ${
 					showElement ? "opacity-100" : "opacity-0"
 				}`}
 			>
 				<h1 className='text-3xl whitespace-nowrap pt-4'>the french tototte</h1>
 				<img src='/icon/r.svg' className='w-[6px] mt-1 pt-4' />
 			</div>
-			<main className='relative w-[100dvw] overflow-hidden flex flex-col items-center -mt-36'>
+			<main className='relative w-[100dvw] overflow-hidden flex flex-col items-center -mt-20 md:-mt-36'>
 				<VerticalLines />
 				<Hero />
 				<Cards />
