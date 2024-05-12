@@ -18,7 +18,7 @@ export const BuyTototte = () => {
 					Vous allez créer la tototte idéale pour vous. À chacun son expérience, à chacun sa tototte.
 				</p>
 			</section>
-			<div className='w-[100dvw] z-20 md:z-40 overflow-hidden sticky top-0 bg-transparent md:pointer-events-none'>
+			<div className='w-[100dvw] z-20 md:z-50 overflow-hidden sticky top-0 bg-transparent md:pointer-events-none'>
 				<div className='mx-auto max-w-[1400px] md:mt-28'>
 					<div className='md:w-1/2 lg:w-2/3 md:ml-5 lg:-ml-5'>
 						<div className='md:w-[420px] lg:w-[620px] 2xl:w-[940px] mx-auto md:rounded-lg md:overflow-hidden md:pointer-events-auto cursor-pointer'>

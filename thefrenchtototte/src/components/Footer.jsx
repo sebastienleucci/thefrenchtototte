@@ -1,6 +1,6 @@
 export const Footer = () => {
 	return (
-		<footer className='sticky z-30 flex flex-col px-5 pt-16 w-[100dvw] bg-brown-dark overflow-hidden'>
+		<footer className='sticky z-[45] flex flex-col px-5 pt-16 w-[100dvw] bg-brown-dark overflow-hidden'>
 			<div className='relative md:w-1/2 lg:w-1/3 md:ml-auto md:pl-16 lg:pr-10 lg:pl-3 2xl:pr-44'>
 				<div className='flex flex-col mx-auto max-w-96 2xl:max-w-none 2xl:w-[26rem]'>
 					<h6 className='text-3xl text-beige mb-3'>votre panier est prêt</h6>
