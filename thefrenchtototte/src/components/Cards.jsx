@@ -2,7 +2,7 @@ export const Cards = () => {
 	return (
 		<>
 			{/* Mobile... */}
-			<section className='lg:hidden z-20 flex flex-wrap justify-center gap-5 mx-auto px-5 pt-[40rem] md:pt-[24rem]'>
+			<section className='lg:hidden z-20 flex flex-wrap justify-center gap-5 mx-auto px-5 pt-[40rem] md:pt-[24rem] min-[768px]:pt-[40rem]'>
 				<div className='min-w-72 max-w-96 flex-1 rounded-xl overflow-hidden bg-gradient-to-t from-blue to-white'>
 					<div className='aspect-[5/4] w-full'>
 						<img src='/img/tot-big.png' className='object-cover -translate-x-24 translate-y-16 scale-110' />
@@ -80,7 +80,7 @@ export const Cards = () => {
 				</div>
 			</section>
 			{/* Desktop... */}
-			<section className='hidden lg:flex flex-col z-20 max-w-[1024px] gap-5 mx-auto pt-[40rem] md:pt-[24rem]'>
+			<section className='hidden lg:flex flex-col z-20 max-w-[1024px] gap-5 mx-auto pt-[40rem] xl:pt-[30rem] 2xl:pt-[15rem]'>
 				<div className='flex gap-5'>
 					<div className='group flex flex-col justify-between min-w-96 rounded-xl overflow-hidden bg-gradient-to-t from-blue to-white group-hover:to-blue'>
 						<div className='aspect-[5/4] w-full'>

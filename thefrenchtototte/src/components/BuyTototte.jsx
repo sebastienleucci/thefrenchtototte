@@ -10,7 +10,7 @@ export const BuyTototte = () => {
 
 	return (
 		<>
-			<section className='md:hidden flex flex-col z-20 pt-52 max-w-full bg-beige-light'>
+			<section className='md:hidden flex flex-col z-20 pt-52 max-w-[full] bg-beige-light'>
 				<h1 className='relative z-10 px-[60px] mt-10 text-5xl leading-[2.7rem] text-brown-dark '>
 					personnalisez votre tototte
 				</h1>
@@ -18,7 +18,7 @@ export const BuyTototte = () => {
 					Vous allez créer la tototte idéale pour vous. À chacun son expérience, à chacun sa tototte.
 				</p>
 			</section>
-			<div className='w-[100dvw] z-20 md:z-50 overflow-hidden sticky top-0 bg-transparent md:pointer-events-none'>
+			<div className='max-w-[100dvw] z-20 md:z-50 overflow-hidden sticky top-0 bg-transparent md:pointer-events-none'>
 				<div className='mx-auto max-w-[1400px] md:mt-28'>
 					<div className='md:w-1/2 lg:w-2/3 md:ml-5 lg:-ml-5'>
 						<div className='md:w-[420px] lg:w-[620px] 2xl:w-[940px] mx-auto md:rounded-lg md:overflow-hidden md:pointer-events-auto cursor-pointer'>

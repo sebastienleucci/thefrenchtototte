@@ -1,6 +1,6 @@
 export const Footer = () => {
 	return (
-		<footer className='sticky z-[45] flex flex-col px-5 pt-16 w-[100dvw] bg-brown-dark overflow-hidden'>
+		<footer className='sticky z-[45] flex flex-col px-5 pt-16 max-w-[100dvw] bg-brown-dark overflow-hidden'>
 			<div className='relative md:w-1/2 lg:w-1/3 md:ml-auto md:pl-16 lg:pr-10 lg:pl-3 2xl:pr-44'>
 				<div className='flex flex-col mx-auto max-w-96 2xl:max-w-none 2xl:w-[26rem]'>
 					<h6 className='text-3xl text-beige mb-3'>votre panier est prêt</h6>
@@ -39,9 +39,18 @@ export const Footer = () => {
 							<img src='/icon/Store.svg' className='w-5' />
 						</div>
 					</div>
-					<button className='bg-beige/30  active:bg-beige/60 text-beige py-5 mt-10 mb-3'>
+					<a
+						href='https://www.youtube.com/channel/UCnnIP34CpT7nIBZS5KuuhbA'
+						target='_blank'
+						className='text-center bg-beige/30 text-beige py-5 mt-10 mb-3 bg-right hover:bg-left duration-1000'
+						style={{
+							backgroundImage: `url(/icon/Colors-2.svg)`,
+							backgroundSize: "500%",
+							backgroundRepeat: "no-repeat",
+						}}
+					>
 						Ajouter au panier
-					</button>
+					</a>
 					<p className='text-[0.55rem]'>
 						The French Tototte est couverte par une garantie limitée contre les défauts de fabrication pour
 						une période de 2 mois à compter de la date d'achat. Cette garantie ne couvre pas les dommages

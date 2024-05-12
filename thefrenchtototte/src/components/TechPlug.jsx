@@ -1,4 +1,11 @@
 export const TechPlug = () => {
+	const scrollDown = () => {
+		const targetScrollY = window.scrollY + 700
+		window.scrollTo({
+			top: targetScrollY,
+			behavior: "smooth",
+		})
+	}
 	return (
 		<section className='relative flex flex-col justify-center mt-24 mx-auto w-full'>
 			<div className='relative w-full max-w-[720px] mx-auto -mb-20 md:-mb-44'>
@@ -26,7 +33,13 @@ export const TechPlug = () => {
 					</div>
 				</div>
 			</div>
-			<button className='font-gustavo font-medium text-brown py-2 px-6 mt-16'>Decouvrir les saveurs</button>
+			<button
+				onClick={scrollDown}
+				className='group font-gustavo font-medium text-brown pt-2 px-6 mt-16 max-w-72 mx-auto flex flex-col items-center'
+			>
+				<p>Decouvrir les saveurs</p>
+				<div className='mt-2 h-[2px] w-0 group-hover:w-full bg-gradient-to-r from-transparent via-brown-dark to-transparent duration-300' />
+			</button>
 			<div className='w-[2px] rounded h-96 mx-auto bg-gradient-to-b from-brown to-transparent' />
 		</section>
 	)
