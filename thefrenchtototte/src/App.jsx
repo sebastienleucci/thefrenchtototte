@@ -12,12 +12,12 @@ import { Header } from "./components/Header.jsx"
 import { Footer } from "./components/Footer.jsx"
 import { VerticalLines } from "./components/VerticalLines.jsx"
 import { HeaderCenter } from "./components/HeaderCenter.jsx"
+import { ThreeSection } from "./components/ThreeSection.jsx"
 
 export default function App() {
-
 	return (
 		<>
-			<Header  />
+			<Header />
 			<HeaderCenter />
 			<main className='relative overflow-hidden flex flex-col items-center -mt-20 md:-mt-36 max-w-[100dvw]'>
 				<VerticalLines />
@@ -27,6 +27,7 @@ export default function App() {
 				<Flavors />
 				<NoTroubles />
 				<Spotify />
+				<ThreeSection />
 				<Mynthos />
 				<Collab />
 			</main>
